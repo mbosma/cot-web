@@ -1,0 +1,1 @@
+Commented out lines 870 - 884 to remove state information error on node-add forms for non-admin editors.

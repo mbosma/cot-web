@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="aggregator.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213250000000" />
+<file name="book.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213250000000" />
+<file name="comment.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213260000000" />
+<file name="comment.views_default.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213260000000" />
+<file name="contact.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213260000000" />
+<file name="field.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213270000000" />
+<file name="file.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213270000000" />
+<file name="filter.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213270000000" />
+<file name="image.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213270000000" />
+<file name="locale.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="node.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="node.views_default.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="node.views_template.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="poll.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="profile.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="search.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="search.views_default.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="statistics.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213300000000" />
+<file name="statistics.views_default.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213310000000" />
+<file name="system.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213310000000" />
+<file name="taxonomy.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213320000000" />
+<file name="taxonomy.views_default.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213320000000" />
+<file name="translation.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213330000000" />
+<file name="user.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213340000000" />
+<file name="views.views.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213340000000" />
+</dwsync>

@@ -1,0 +1,11 @@
+--- a/cas_attributes.admin.inc
++++ b/cas_attributes.admin.inc
+@@ -11,7 +11,7 @@
+ function cas_attributes_admin_settings() {
+   // Get current settings, and add default options.
+   $cas_attributes = variable_get('cas_attributes', array());
+-  $cas_attributes += array('sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
++  $cas_attributes += array('overwrite' => TRUE, 'sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
+   $relations = $cas_attributes['relations'];
+ 
+   $form['cas_attributes'] = array(

@@ -1,0 +1,11 @@
+--- a/cas_attributes.module
++++ b/cas_attributes.module
+@@ -46,7 +46,7 @@
+  */
+ function cas_attributes_cas_user_presave(&$edit, $account) {
+   $cas_attributes = variable_get('cas_attributes', array());
+-  $cas_attributes += array('sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
++  $cas_attributes += array('overwrite' => TRUE, 'sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
+ 
+   // We synchronize on the first login (always) and on future logins (if chosen).
+   if ($account->login && !$cas_attributes['sync_every_login']) {

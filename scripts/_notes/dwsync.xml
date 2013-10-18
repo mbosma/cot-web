@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="code-clean.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208870000000" />
+<file name="cron-curl.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208870000000" />
+<file name="cron-lynx.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208870000000" />
+<file name="drupal.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208870000000" />
+<file name="dump-database-d6.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208870000000" />
+<file name="dump-database-d7.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208880000000" />
+<file name="generate-d6-content.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208880000000" />
+<file name="generate-d7-content.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208880000000" />
+<file name="password-hash.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208880000000" />
+<file name="run-tests.sh" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208880000000" />
+<file name="test.script" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208880000000" />
+</dwsync>

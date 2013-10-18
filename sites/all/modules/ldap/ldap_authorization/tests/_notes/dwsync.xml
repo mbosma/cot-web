@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="1197636.ldap_authentication.test_data.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212150000000" />
+<file name="1197636.ldap_authorization.test_data.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="1197636.ldap_servers.test_data.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="1197636.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="Basic.Flags.ldap_authorization.test_data.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="BasicTests.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="Derivations.ldap_authorization.DeriveFromAttr.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="Derivations.ldap_authorization.DeriveFromDN.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="Derivations.ldap_authorization.DeriveFromEntry.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212160000000" />
+<file name="Derivations.ldap_authorization_og.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212170000000" />
+<file name="Derivations.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212170000000" />
+<file name="ldapauthor1.ldap_authentication.test_data.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212180000000" />
+<file name="ldapauthor1.ldap_server.test_data.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212180000000" />
+<file name="LdapAuthorizationTestCase.class.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212180000000" />
+<file name="ldap_authorization.test_data.Flags.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212180000000" />
+<file name="OgTests.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212190000000" />
+<file name="OtherAuthenticationIntegration.ldap_authorization.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212190000000" />
+<file name="OtherAuthenticationIntegrationTests.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793341800000000" remote="130264212190000000" />
+</dwsync>

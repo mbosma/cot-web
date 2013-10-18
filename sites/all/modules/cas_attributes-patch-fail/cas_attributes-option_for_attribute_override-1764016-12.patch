@@ -1,0 +1,210 @@
+diff --git a/cas_attributes.admin.inc b/cas_attributes.admin.inc
+index 642475a..f23210e 100644
+--- a/cas_attributes.admin.inc
++++ b/cas_attributes.admin.inc
+@@ -11,7 +11,7 @@
+ function cas_attributes_admin_settings() {
+   // Get current settings, and add default options.
+   $cas_attributes = variable_get('cas_attributes', array());
+-  $cas_attributes += array('sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
++  $cas_attributes += array('overwrite' => TRUE, 'sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
+   $relations = $cas_attributes['relations'];
+ 
+   $form['cas_attributes'] = array(
+@@ -30,6 +30,17 @@ function cas_attributes_admin_settings() {
+     '#weight' => -10,
+   );
+ 
++  $form['cas_attributes']['overwrite'] = array(
++    '#type' => 'radios',
++    '#title' => t('Overwrite existing values'),
++    '#default_value' => $cas_attributes['overwrite'],
++    '#options' => array(
++      0 => 'only store data from attributes for fields that are empty (don\'t overwrite user fields that already have data).',
++      1 => 'always store data from attributes (overwrite user fields that already have data).',
++    ),
++    '#weight' => -9,
++  );
++
+   $form['cas_attributes']['relations'] = array(
+     '#type' => 'fieldset',
+     '#title' => t('CAS attribute mappings'),
+diff --git a/cas_attributes.module b/cas_attributes.module
+index 7460826..6678df7 100644
+--- a/cas_attributes.module
++++ b/cas_attributes.module
+@@ -46,7 +46,7 @@ function cas_attributes_menu() {
+  */
+ function cas_attributes_cas_user_presave(&$edit, $account) {
+   $cas_attributes = variable_get('cas_attributes', array());
+-  $cas_attributes += array('sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
++  $cas_attributes += array('overwrite' => TRUE, 'sync_every_login' => NULL, 'relations' => array('mail' => NULL, 'name' => NULL), 'roles' => array('manage' => array(), 'mapping' => ''));
+ 
+   // We synchronize on the first login (always) and on future logins (if chosen).
+   if ($account->login && !$cas_attributes['sync_every_login']) {
+@@ -64,10 +64,16 @@ function cas_attributes_cas_user_presave(&$edit, $account) {
+     // Only update the fields if there is data to set.
+     if (!empty($result)) {
+       if ($drupal_field == 'name' || $drupal_field == 'mail') {
+-        $edit[$drupal_field] = $result;
++        // Only update field if overwrite setting is on, or if it is empty.
++        if ($cas_attributes['overwrite'] || empty($account->{$drupal_field})) {
++          $edit[$drupal_field] = $result;
++        }
+       }
+       else {
+-        $edit[$drupal_field][LANGUAGE_NONE][0]['value'] = $result;
++        // Only update field if overwrite setting is on, or if it is empty.
++        if ($cas_attributes['overwrite'] || empty($account->{$drupal_field})) {
++          $edit[$drupal_field][LANGUAGE_NONE][0]['value'] = $result;
++        }
+       }
+     }
+   }
+diff --git a/cas_attributes.test b/cas_attributes.test
+index fd70bd4..cd5815e 100644
+--- a/cas_attributes.test
++++ b/cas_attributes.test
+@@ -118,6 +118,7 @@ class CasAttributesTestCase extends CasAttributesTestHelper {
+     $this->drupalLogin($this->admin_user);
+     $edit = array(
+       'cas_attributes[sync_every_login]' => 0,
++      'cas_attributes[overwrite]' => 1,
+       'cas_attributes[relations][name]' => '[cas:attribute:NAME]',
+       'cas_attributes[relations][mail]' => '[cas:name]@example.com',
+       'cas_attributes[relations][test_user_memberof]' => '[cas:attribute:memberOf]',
+@@ -139,5 +140,134 @@ class CasAttributesTestCase extends CasAttributesTestHelper {
+     $this->assertEqual($this->loggedInUser->mail, "$cas_name@example.com");
+     $this->assertEqual($this->loggedInUser->test_user_memberof[LANGUAGE_NONE][0]['value'], 'CN=Staff,OU=Groups,DC=example,DC=edu');
+     $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'John Smith');
++
++  }
++
++  function testSyncEveryLogin() {
++    // Create a new CAS user.
++    $cas_name = $this->randomName();
++    $attributes = array(
++      'surname' => 'Smith',
++      'givenName' => 'John',
++    );
++    $cas_user = array('name' => $cas_name, 'attributes' => $attributes);
++    variable_set('cas_test_cas_user', $cas_user);
++
++    // Set up a relationship mapping, and leave sync_every_login turned off.
++    $this->drupalLogin($this->admin_user);
++    $edit = array(
++      'cas_attributes[sync_every_login]' => 0,
++      'cas_attributes[overwrite]' => 1,
++      'cas_attributes[relations][test_user_name]' => '[cas:attribute:givenName] [cas:attribute:surname]',
++    );
++    $this->drupalPost('admin/config/people/cas/attributes', $edit, t('Save configuration'));
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalGet('admin/config/people/cas/attributes/cas');
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalLogout();
++
++    // Log in as the new CAS user.
++    $this->casLogin($cas_name, $attributes);
++
++    // After login, the account is reloaded into $this->loggedInUser.
++    $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'John Smith');
++
++    // change the attributes
++    $attributes = array(
++      'surname' => 'Smith',
++      'givenName' => 'Dave',
++    );
++    $cas_user = array('name' => $cas_name, 'attributes' => $attributes);
++    variable_set('cas_test_cas_user', $cas_user);
++
++    // log out and log back in
++    $this->drupalLogout();
++    $this->casLogin($cas_name, $attributes);
++
++    // Sync every login is turned off so name should not have changed.
++    $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'John Smith');
++
++    // turn on sync every login
++    $this->drupalLogout();
++    $this->drupalLogin($this->admin_user);
++    $edit = array(
++      'cas_attributes[sync_every_login]' => 1,
++    );
++    $this->drupalPost('admin/config/people/cas/attributes', $edit, t('Save configuration'));
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalGet('admin/config/people/cas/attributes/cas');
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalLogout();
++
++    // log CAS user back in
++    $this->casLogin($cas_name, $attributes);
++
++    // Sync every login is on and overwrite is on so name should be updated.
++    $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'Dave Smith');
++
++  }
++
++  function testOverwriteAttributesLogin() {
++    // Create a new CAS user.
++    $cas_name = $this->randomName();
++    $attributes = array(
++      'surname' => 'Smith',
++      'givenName' => 'John',
++    );
++    $cas_user = array('name' => $cas_name, 'attributes' => $attributes);
++    variable_set('cas_test_cas_user', $cas_user);
++
++    // Set up a relationship mapping, and leave overwrite existing data turned off.
++    $this->drupalLogin($this->admin_user);
++    $edit = array(
++      'cas_attributes[sync_every_login]' => 1,
++      'cas_attributes[overwrite]' => 0,
++      'cas_attributes[relations][test_user_name]' => '[cas:attribute:givenName] [cas:attribute:surname]',
++    );
++    $this->drupalPost('admin/config/people/cas/attributes', $edit, t('Save configuration'));
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalGet('admin/config/people/cas/attributes/cas');
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalLogout();
++
++    // Log in as the new CAS user.
++    $this->casLogin($cas_name, $attributes);
++
++    // After login, the account is reloaded into $this->loggedInUser.
++    $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'John Smith');
++
++    // change the attributes
++    $attributes = array(
++      'surname' => 'Smith',
++      'givenName' => 'Dave',
++    );
++    $cas_user = array('name' => $cas_name, 'attributes' => $attributes);
++    variable_set('cas_test_cas_user', $cas_user);
++
++    // log out and log back in
++    $this->drupalLogout();
++    $this->casLogin($cas_name, $attributes);
++
++    // Overwrite existing data is turned off so name should not have changed.
++    $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'John Smith');
++
++    // turn on sync every login
++    $this->drupalLogout();
++    $this->drupalLogin($this->admin_user);
++    $edit = array(
++      'cas_attributes[overwrite]' => 1,
++    );
++    $this->drupalPost('admin/config/people/cas/attributes', $edit, t('Save configuration'));
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalGet('admin/config/people/cas/attributes/cas');
++    $this->drupalGet('user/' . $this->admin_user->uid . '/edit');
++    $this->drupalLogout();
++
++    // log CAS user back in
++    $this->casLogin($cas_name, $attributes);
++
++    // Sync every login is on and overwrite is on so name should be updated.
++    $this->assertEqual($this->loggedInUser->test_user_name[LANGUAGE_NONE][0]['value'], 'Dave Smith');
++    
+   }
+ }

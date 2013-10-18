@@ -1,0 +1,350 @@
+/* Page */
+#content-wrapper {
+	background-image: url("images/page-bkg.png");
+
+}
+
+/*Hide H1 tags on landing page content types */
+body.page-type-department-option-landing-page h1,
+body.front h1,
+body.front .article,
+body.page-type-degree-option.section-degrees h1,
+body.page-type-landing-page h1,
+body.page-type-center-landing-page h1,
+body.page-type-facility h1,
+body.page-type-landing-page .article-landing-page,
+body.page-user #page-title {
+  display:none;
+}
+
+
+
+
+
+
+/* Header */
+#page > header {}
+#logo {
+  margin: 0px;
+}
+#page > header > hgroup {
+  margin: 0 10px;
+}
+#site-name {}
+#site-name a    {}
+#site-name a:visited {}
+#site-name a:hover   {}
+#site-name a:focus   {}
+#site-name a:active  {}
+#site-slogan {}
+
+
+
+/* Page title */
+h1#page-title {
+	text-transform:uppercase;
+}
+
+/* Header & footer Styles */
+#leaderboard-wrapper {
+    background-image: url("images/leader-board-bkg-lines.png");
+	border-bottom:1px solid #111111;
+	-webkit-box-shadow: 0px 1px 6px 0px #222222;
+    -moz-box-shadow: 0px 1px 6px 0px #222222;
+ 	box-shadow: 0px 1px 6px 0px #222222;
+}
+#leaderboard-wrapper-dev {
+	background-image: url("images/leader-board-bkg-lines-dev.png");
+}
+
+
+/* 3rd column of regions now in footer!! */
+.kitchen-sink, .region-footer {
+	padding-top:20px;
+	text-align:left;
+	font-size:.8em;
+}
+
+.kitchen-sink, .kitchen-sink a, .kitchen-sink a:visited, .kitchen-sink a:link{
+	color:#7e828b;
+	text-decoration:none;
+	}
+.kitchen-sink h2{
+	color:#b7bac2;
+}
+
+.kitchen-sink h2 a:link, .kitchen-sink h2 a:visited, .kitchen-sink h2 a:hover {
+	color:#b7bac2;
+}
+
+.kitchen-sink a:hover {color:#6f737d}
+
+#footer-wrapper {
+	background-color:#e8edf5;
+	background-image:url(/sites/default/files/images/kitchen-sink.png);
+	background-repeat:no-repeat;
+	background-position: center 22px;
+	}
+
+
+#main-content {
+	margin-top:20px;
+	padding-bottom:20px;
+	
+}
+
+
+#header-wrapper {
+	height:auto;
+	overflow:hidden;
+	-webkit-box-shadow: 0 8px 6px -6px 2d2d2d;
+    -moz-box-shadow: 0 8px 6px -6px 2d2d2d;
+ 	box-shadow: inset 0 8px 4px -6px #2d2d2d;
+}
+
+#header-wrapper, #shadow2 {
+  background-color: #f4d073;
+  background-image:none; 
+}
+
+#header-wrapper{
+  border-bottom:1px solid #b8b8b8;
+}
+
+h1 {
+  color:#f4d073;}
+nav ul.menu li a:hover, nav ul.menu li a:focus, nav ul.menu li a:active, nav ul.menu li.active-trail a, #nav-wrapper  {
+  border-color:#f4d073;}
+
+#shadow2 {
+    height:8px;
+	display:none;
+}
+
+
+
+body {
+	/*background-color:#405375;*/
+	
+}
+
+
+.logo {
+    margin:7px 0px 7px 0px;
+}
+#leaderboard-logo{
+    float:left;
+    width:164px;
+    line-height: 0;
+}
+
+
+/* Regions */
+.region-leaderboard {
+    float:left;
+    line-height:0px;
+}
+
+
+.region-leaderboardtopmenu ul,
+.region-leaderboardtopmenu li,
+.region-leaderboardtopmenu a {
+   margin:5px 0px 7px 10px;
+   display:inline;
+   
+}
+
+.region-leaderboardtopmenu{
+    float:right;
+}
+.region-leaderboardsearchmenu{
+    float:right;
+}
+.region-leaderboardbottommenu{
+	padding-top:5px;
+    clear:right;
+    float:right;
+}
+.region-header {height:auto;}
+.region-secondary-content {}
+.region-highlighted {}
+.region-content-aside {}
+.region-tertiary-content {}
+.region-footer {}
+
+/* Sidebars */
+.sidebar {}
+.region-sidebar-first {}
+.region-sidebar-second {
+	margin-top:20px;
+	
+	}
+
+/* Footer - the main page footer only */
+#page > footer {}
+
+/* Feed icons */
+#feed-icons {}
+#feed-icons .feed-icon {}
+#feed-icons .feed-icon img {}
+#feed-icons a.feed-icon {}
+
+/* Search results list. */
+.search-results {}
+.search-results .search-result {}
+.search-results .title {}
+.search-results .search-snippet-info {}
+.search-results p {}
+.search-results .search-snippet {}
+.search-results .search-info {}
+
+span.search-info-type {}
+span.search-info-user {}
+span.search-info-date {}
+span.search-info-comment {}
+span.search-info-upload  {}
+
+/* Aggregator */
+.feed-item {}
+.feed-item header {}
+.feed-item-title {}
+.feed-item-meta {}
+.feed-item .content {}
+.feed-item footer {}
+.feed-source {}
+.feed-description {}
+
+/* Maintenance page */
+.maintenance-page #skip-link {
+  position: absolute;
+  top: -99em;
+}
+.maintenance-page footer {
+  margin: 10px 0 0;
+}
+.maintenance-page footer a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* Prevent overflowing content */
+header[role=banner],
+.content-inner,
+.nav,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-secondary-content,
+.region-tertiary-content,
+.region-footer {
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+/***********************************************************/
+/***********************************************************/
+/* ADMINISTRATION STYLING - hide fields for node add*/
+/***********************************************************/
+/***********************************************************/
+
+
+/* Hide Edit button on Newsroom for Authenticated user */
+.page-node-679.role-authenticated-user #tasks {
+	display:none;
+}
+
+/* Show Edit button on Newsroom for Authenticated user */
+.page-node-679.role-Website-Hero #tasks {
+	display:inherit !important;
+}
+
+/* Hide fields on Issue content type for Authenticated user */
+.page-node-1319.role-authenticated-user #content h2,
+.page-node-1319.role-authenticated-user #edit-workbench-access,
+.page-node-1319.role-authenticated-user #edit-field-status,
+.page-node-1319.role-authenticated-user #edit-field-priority,
+.page-node-1319.role-authenticated-user .vertical-tabs {
+	display:none;
+}
+
+/* Hide text format settings on comments on Issue content type */
+.page-type-issue .filter-wrapper {
+	display:none;	
+}
+
+/* Show fields on Issue content type for Website Hero */
+.page-node-1319.role-Website-Hero #edit-field-status,
+.page-node-1319.role-Website-Hero #edit-field-priority {
+	display:inherit !important;
+}
+
+#comments {
+	padding:5px;
+	background-color:#FAFAFA;
+	border: 1px solid #ECECEC;
+}
+
+/* Hide fields for report news add form */
+.page-node-736 #content .block-title,
+.page-node-736 .field-name-field-tags,
+.page-node-736 .filter-wrapper,
+.page-node-736 .field-name-field-slider-image,
+.page-node-736 .field-name-field-slider-image-no-link,
+.page-node-736 .field-name-field-category-sitewide-news,
+.page-node-736 .field-name-field-department-reference,
+.page-node-736 .field-name-field-location-reference,
+.page-node-736 .field-name-field-category-center,
+.page-node-736 .field-name-field-category-other,
+.page-node-736 .field-name-field-user,
+.page-node-736 .vertical-tabs {
+	display:none;
+
+}
+
+/* Style add new comment button on issue queue */
+.page-type-issue nav.clearfix {
+	display: inline;
+	background-color:#E3AE24;
+	color:#FFF;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:4px;
+	margin-top:10px;
+}
+
+.page-type-issue nav.clearfix a {
+	color:#FFF;
+}
+.page-type-issue #block-views-issue-queue-block-1 {
+	margin-bottom:20px;	
+}
+
+/* Style comments display */
+
+#comments {
+	float:left;
+	width:100%;
+}
+
+#comments .user-picture {
+	float:left;
+	width:17%;
+	padding-right:10px;
+}
+
+#comments .content {
+	float:left;
+	width:80%;
+}
+
+#comments .submitted {
+	font-size:.8em;
+}
+
+#comments ul.links {
+	clear:both;
+}
+
+/*Hides create new child links for non-admin users who have access to view children pages*/
+.newchild {display:none;}
+.role-Website-Hero .newchild, 
+.role-Super-Editor .newchild {display:inherit;}

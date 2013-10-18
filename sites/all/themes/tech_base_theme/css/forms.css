@@ -1,0 +1,485 @@
+/**
+ * Adaptivetheme takes a pretty heavy handed approach to form styling,
+ * this is so you can have decent looking forms without having to do a
+ * lot of work. The CSS is included in full, including all positioning,
+ * so you can change anything you want.
+ */
+form {
+  margin: 0 0;
+  padding: 0;
+}
+
+.page-type-webform form div {
+	clear:both;
+}
+
+.form-item label {
+  font-weight: bold;
+}
+
+.form-item div label {
+  font-weight: 400;
+}
+
+input {
+  margin: 0;
+  max-width: 100%;
+}
+
+input.text,
+input.title,
+textarea,
+select {
+  border: 1px solid #ccc;
+  margin: 0;
+}
+
+
+/* Focus styles for accessibility and usabiltiy. */
+.form-text:focus,
+.form-checkbox:focus,
+.form-radio:focus,
+.form-select:focus {
+  border: 1px solid #fc0;
+  background: #F0F0F0;
+}
+textarea:focus {
+  border: 1px solid #fc0;
+}
+
+/* Inputs and textarea */
+input.text,
+input.title {
+  padding: .5em;
+}
+input.form-text,
+textarea {
+  border: 1px solid #ccc;
+  height: auto;
+  padding: 6px;
+}
+textarea,
+input {
+  font: 1em normal Arial, Helvetica, sans-serif;
+}
+
+form div .form-text,
+form div textarea {
+  font: 1em normal Arial, Helvetica, sans-serif;
+}
+
+div.resizable-textarea textarea {
+  margin-top: 0;
+}
+
+/* Misc */
+.form-item,
+.form-action {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.exposed-filters .form-item {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.form-item textarea.error {
+  padding: 2px;
+}
+.form-item .description,
+fieldset .description,
+.fieldset-layout-settings dd {
+  font-size: 0.846em;
+}
+
+/* Required, mark */
+span.form-required,
+span.marker {}
+
+
+/* Fieldsets */
+fieldset {
+  background: transparent;
+  border: 1px solid #dadada;
+  margin: 10px 0;
+  padding: 10px;
+}
+fieldset fieldset:last-child {
+  margin-bottom: 0;
+}
+.form-type-radio .description,
+.form-type-checkbox .description {
+  margin-left: 0;
+}
+*:first-child+html fieldset {
+  background-color: transparent;
+  background-position: 0 10px;
+  padding: 0 10px 10px;
+}
+*:first-child+html fieldset > .description,
+*:first-child+html fieldset .fieldset-wrapper .description {
+  padding-top: 10px;
+}
+
+fieldset legend {
+  display: block;
+  font-weight: bold;
+  padding: 0 10px 0 0;
+}
+
+
+*:first-child+html fieldset legend,
+*:first-child+html fieldset.collapsed legend {
+  display: inline;
+}
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 5px;
+}
+/* Form descriptions */
+.description {}
+
+/* Search */
+#search-block-form {padding-top:5px;}
+#search-block-form > div {}
+#search-block-form { margin-right:15px;}
+#edit-search-block-form-1-wrapper {}
+#search-block-form label {}
+#search-block-form input {padding:0px;}
+#content .form-submit {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  background: url(images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  clear:both;
+  float:left;
+}
+
+#content .form-submit:hover {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+  color: #F4D073;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  background: url(images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+#search-block-form .form-actions {display:none;}
+.new-issue a {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  background: url(images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.new-issue a:hover {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+  color: #F4D073;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  background: url(images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration:none;
+}
+
+.views-submit-button {
+	margin-top:-5px;
+}
+
+.views-exposed-form #edit-title-wrapper {
+	padding-right:.2em;
+}
+
+#search-block-form .form-text {}
+
+/* Advanced search form */
+fieldset#edit-advanced fieldset {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+fieldset#edit-advanced fieldset .fieldset-legend {
+  background: none;
+  padding-left: 1em;
+}
+.advanced-search-submit {
+  clear: both;
+}
+.search-advanced .criterion {
+  float: none;
+  margin: 0 5px;
+}
+#edit-keywords-fieldset .form-item:first-child {
+  margin-top: 5px;
+}
+#search-form {
+  margin: 10px 0;
+}
+#search-form > div {}
+#search-form .container-inline {}
+#search-form label {}
+#search-form input {}
+#search-form .form-item {}
+#search-form .form-submit {}
+
+/* User login */
+#user-login-form ul {
+  margin: 0;
+  padding: 0;
+}
+#user-login-form li.openid-link,
+#user-login-form li.user-link {
+  text-align: center;
+}
+#user-login ul {
+  margin: 0 0 5px;
+}
+#user-login ul li {
+  margin: 0;
+}
+#user-login-form .item-list li {
+  list-style: none;
+  margin: 0;
+}
+#user-login-form li.openid-link,
+#user-login li.openid-link {
+  background: none;
+}
+
+/* hide lable class - mostly deprecated but could be present in an upgraded theme */
+.hide-label label {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  background: none;
+}
+
+/* Admin filters, could be redundant, need to test. */
+#user-admin-filter ul li,
+#article-admin-filter ul li {
+  list-style: none;
+}
+#article-admin-filter ul {
+  padding: .5em 0;
+}
+#edit-operation-wrapper select {
+  margin: .5em;
+}
+
+/* Tips overrides */
+.field-type-text-long fieldset {
+  padding: 10px 0;
+}
+.field-type-text-long fieldset .form-item {
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+fieldset .filter-help {
+  padding: 0 15px 5px;
+}
+.filter-guidelines {
+  font-size: .923em;
+  margin: 0;
+  padding: 5px 18px 10px;
+}
+.tips {
+  font-size: 0.857em;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+/* Special case modules */
+#devel-switch-user-form {
+  margin-bottom: 0;
+}
+
+/*********** WEBFORM FIELDS ON SAME LINE ***********/
+
+.webform-component {
+	clear:both;
+	float:left;
+}
+
+/** Default styling for city, state, zip same line **/
+#webform-component-city
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:both;
+	
+}
+#webform-component-state, #webform-component-zip
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:none;
+}
+
+/* Make the state drop down have some padding to match the height of other elements */
+#webform-component-state .form-select {
+	padding:5px 5px 5px 0px;
+}
+
+/* ABC CAMP REGISTRATION FORM */
+
+.page-node-744 #webform-component-first-name,
+.page-node-744 #webform-component-middle,
+.page-node-744 #webform-component-last-name,
+.page-node-744 #webform-component-sat-scores,
+.page-node-744 #webform-component-sat-scores--math,
+.page-node-744 #webform-component-sat-scores--writing,
+.page-node-744 #webform-component-sat-scores--reading,
+.page-node-744 #webform-component-sat-scores--combined,
+.page-node-744 #webform-component-act-scores,
+.page-node-744 #webform-component-act-scores--math,
+.page-node-744 #webform-component-act-scores--english,
+.page-node-744 #webform-component-act-scores--science,
+.page-node-744 #webform-component-act-scores--reading,
+.page-node-744 #webform-component-act-scores--composite
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:none;
+}
+
+.page-node-744 .form-type-radio
+{
+	display: block;
+	float: left;
+	margin-right:20px;
+	clear:none;
+}
+
+
+/* FRESHMAN SCHOLARSHIP APPLICATION FORM */
+
+.page-node-344 #webform-component-first-name,
+.page-node-344 #webform-component-middle-initial,
+.page-node-344 #webform-component-city,
+.page-node-344 #webform-component-state,
+.page-node-344 #webform-component-sat-scores--math-sat,
+.page-node-344 #webform-component-sat-scores--writing-sat,
+.page-node-344 #webform-component-sat-scores--reading-sat,
+.page-node-344 #webform-component-sat-scores--combined-sat,
+.page-node-344 #webform-component-act-scores2--math-act,
+.page-node-344 #webform-component-act-scores2--english-act,
+.page-node-344 #webform-component-act-scores2--science-act,
+.page-node-344 #webform-component-act-scores2--reading-act,
+.page-node-344 #webform-component-act-scores2--reading-act,
+.page-node-344 #webform-component-act-scores2--composite-act
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:none;
+	
+}
+
+.page-node-344 #webform-component-last-name,
+.page-node-344 #webform-component-zip
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:right;
+	
+}
+
+.page-node-344 #webform-component-country,
+.page-node-344 #webform-component-history,
+.page-node-344 #webform-component-are-you-a-united-states-citizen-or-legal-resident,
+.page-node-344 #webform-component-gender,
+.page-node-344 #webform-component-ethnicity,
+.page-node-344 #webform-component-select-one-or-more-races,
+.page-node-344 #webform-component-major,
+.page-node-344 #webform-component-location,
+.page-node-344 #webform-component-email,
+.page-node-344 #webform-component-purdue-id,
+.page-node-344 #webform-component-no-purdue-id,
+.page-node-344 #webform-component-fafsa,
+.page-node-344 #webform-component-highschool-gpa,
+.page-node-344 #webform-component-sat-scores,
+.page-node-344 #webform-component-act-scores,
+.page-node-344 #webform-component-act-scores2,
+.page-node-344 #webform-component-question1,
+.page-node-344 #webform-component-question2,
+.page-node-344 #webform-component-question3,
+.page-node-344 #webform-component-question4,
+.page-node-344 #webform-component-agree,
+.page-node-344 #webform-client-form-344 .form-submit
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:both;
+	
+}
+
+.page-node-344 #webform-component-address,
+.page-node-344 #webform-component-address-2
+{
+	display: block;
+	float: left;
+	margin-right:10px;
+	clear:left;
+	
+}
+
+/*End Webform Customizations*/
+
+/*removes all working spinner graphics on all auto look-up submit form fields */
+.form-autocomplete {
+background:#ffffff !important;}
+
+
+#edit-submit-search-people .form-submit {
+	margin-top:5px !important;
+}

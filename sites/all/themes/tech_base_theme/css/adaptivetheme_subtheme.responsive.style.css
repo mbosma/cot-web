@@ -1,0 +1,671 @@
+
+
+/* controls all responsive styling across the site ------------------ */
+
+.flexible{
+	float:left;
+}
+
+
+/* -- HIDES HOMEPAGE MOBILE MENU ON LARGER SCREENS --*/
+#secondary-content-wrapper {
+	display:none;
+}
+
+/* -- Target IE versions outside of media queries --*/
+
+.three-column{
+	width:33.333333%;
+	width:33.2%\9;  /* -- IE 8 fix -- */
+	*width:33.2%;  /* -- IE 7 fix -- */
+	_width:33.2%;  /* -- IE 6 fix -- */
+}
+
+
+/* --------------------------*/
+/* --------------------------*/
+/* ----- 400px or less ----- */
+/* --------------------------*/
+/* --------------------------*/
+
+@media only screen
+and (max-width : 481px) {
+#header-wrapper {
+	background-color:#eddfaf;
+}
+.four-column{
+    width:100%;
+}
+.three-column{
+	width:100%;
+}
+.two-column{
+	width:100%;
+}
+
+
+/* -- ------------------------------ --*/
+/* -------- Sitewide styling --------- */
+/* -- ------------------------------ --*/
+
+	/* -- Shows HOMEPAGE MOBILE MENU ON small SCREENS --*/
+	#secondary-content-wrapper {
+		display:block;
+	}
+	
+	
+	#leaderboard-wrapper {
+		background:none;
+	}
+	
+	/* -- Header styling --*/
+	
+		/* -- Makes background go full width behind header --*/
+	.region-leaderboard {
+		/*float:none;*/
+	}
+		
+	#leaderboard-wrapper {
+		background-image: url("images/leader-board-bkg-lines.png");
+		border-bottom:none;
+	}
+	
+		/* -- Hide leaderboard border --*/
+	#leaderboard-wrapper {
+		border-bottom:none;
+	}
+	
+	#leaderboard-wrapper .region-leaderboardsearchmenu {
+		float:right;
+	}
+		/* -- Hide Purdue link and login link --*/
+	.region-leaderboardtopmenu,
+	.region-leaderboardbottommenu {
+		display:none;
+	}
+	
+	.region-leaderboardbottommenu li {
+		float:left;
+		clear:both;
+	}
+	
+	
+		/* -- center apply now button --*/
+	#block-views-apply-now-button-block,
+	#block-block-30 {
+		width: 200px;
+		margin: 0px auto;
+		padding-bottom:10px;
+	}
+	
+	#nav-wrapper {
+		display:none;	
+	}
+	
+	#header-wrapper #block-menu-block-6 h2 {
+		display:none;
+	}
+	
+	#header-wrapper #block-menu-block-6 a {
+		font-size:18px;
+	}
+	
+	
+	/* -- Mobile Menu styling --*/
+	
+	#block-quicktabs-mobile-accordion-menu .block-inner {
+		margin:0px;
+	}
+	
+	#block-quicktabs-mobile-accordion-menu {
+		padding-top:0px;
+	}
+	
+	#block-quicktabs-mobile-accordion-menu .block-inner .ui-corner-all {
+		border-radius:0px;
+		-webkit-border-radius:0px;
+		-moz-border-radius:0px;	
+	}
+	
+		/* -- accordion closed styling --*/
+	#block-quicktabs-mobile-accordion-menu .block-inner .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+		border:none;
+		border-bottom:2px solid #F4D073;
+		background:none;
+		background-color:#fff;
+		color:#fff;
+	}
+	
+	#quickset-mobile_accordion_menu .ui-accordion-content {
+		padding:.5em .1em;
+	}
+	
+	#quickset-mobile_accordion_menu .ui-accordion-content .quicktabs_main.quicktabs-style-basic,
+	#quickset-mobile_accordion_menu .ui-accordion-content .quicktabs_main.quicktabs-style-basic .block-inner {
+		padding:0px;
+		margin-left:0px;
+	}
+	
+		/* -- menu list items --*/
+	#quickset-mobile_accordion_menu .ui-accordion-content #quicktabs-container-menu_tabs_for_mobile_menu ul li,
+	#quickset-mobile_accordion_menu .ui-accordion-content #quicktabs-container-menu_tabs_for_mobile_menu-2 ul li {
+		list-style:none;
+		list-style-type:none;
+		list-style-image:none;
+		border-bottom:1px solid #CCC;
+		width:95%;
+		font-size:15px;
+		padding-bottom:5px;
+		padding-top:5px;
+		padding-left:10px;
+		margin:0 0 0 0;
+		line-height:normal;
+	}
+	
+	
+
+
+/* -- ----------------------------- --*/
+/* ----- Front Homepage styling ----- */
+/* -- ----------------------------- --*/
+
+	.front .region-sidebar-second{
+		display:none;
+	}
+	
+	.front .kitchen-sink div {
+		width:95%;
+	}
+	
+		/* -- Hide fields for homepage only --*/
+	.front #block-views-slideshow-home-block,
+	.front .header-3col,
+	.front #footer-wrapper,
+	.front .region-leaderboardbottommenu{
+		display:none;
+	}
+	
+		/* -- Style homepage menu --*/
+	#block-menu-menu-mobile-homepage-menu ul{
+		width:100%;
+		margin:0;
+	}
+	
+	#block-menu-menu-mobile-homepage-menu .block-inner {
+		margin-left:0px;
+		padding-left:0px;	
+	}
+	
+	#block-menu-menu-mobile-homepage-menu ul li{
+		list-style:none;
+		list-style-type:none;
+		list-style-image:none;
+		border-bottom:1px solid #CCC;
+		width:100%;
+		font-size:15px;
+		padding-bottom:5px;
+		padding-top:5px;
+		padding-left:10px;
+		margin:0 0 0 0;
+	}
+	
+	#block-menu-menu-mobile-homepage-menu ul li a:link{
+		text-decoration:none;
+	}
+	
+	#block-menu-menu-mobile-homepage-menu ul li a:hover{
+		text-decoration:none;
+	}
+	
+		/* -- Style search bar on homepage --*/
+	.front #block-search-form input {
+		width:90%;
+	}
+	
+	.front #block-search-form #edit-actions {
+		display:none;
+	}
+	
+/* -- --------------------- --*/
+/* -- Specific page styling --*/
+/* -- --------------------- --*/
+
+		/* -- Degrees page styling --*/
+	.section-degrees #block-quicktabs-degrees .views-field-field-degree-instances-with-same {
+		display:none;
+	}
+	
+	.section-degrees #block-quicktabs-degrees .views-field-field-degree-group-image,
+	.section-degrees #block-quicktabs-degree-option-page-quick-tabs {
+		display:none;	
+	}
+	
+	.section-degrees #block-quicktabs-degrees .views-row {
+		background:none;
+	}
+	
+	.section-degrees #block-quicktabs-degrees .views-row a {
+		color:#405375;
+	}
+	
+	.section-degrees #block-quicktabs-degrees .views-row .field-content {
+		color:#444;
+	}
+	
+	.section-degrees section#main-content {
+		padding-bottom:0px !important;
+	}
+	
+	.section-degrees .view-list-of-degrees-on-degree-page .degree-group {
+		min-height:inherit;	
+	}
+	
+			/* -- Make Related degrees full width --*/
+	.section-degrees #block-views-related-degrees-er-block img,
+	.section-degrees #block-views-related-degrees-er-block-1 img  {
+		width:480px !important;
+	}
+
+		/* -- Individual degree page --*/	
+	#quicktabs-degree_option_page_quick_tabs,
+	#block-views-degree-accreditation-block-1 {
+		display:none;	
+	}
+	
+		/* -- Individual department page --*/	
+	.page-type-department-option-landing-page #block-views-site-section-title-block-2,
+	.page-type-department-option-landing-page #block-views-14cbf74eebf9365ecbd89c89743905d8,
+	.page-type-department-option-landing-page .views-field-field-degree-instances-with-same {
+		display:none;	
+	}
+		
+	.view-pos-view-of-courses table .views-field-field-sem-1-course {
+		float:left;
+		width:49%;
+		clear:left;
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-semester-2-courses {
+		float:left;
+		width:49%;
+		clear:right;
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-semester-3-courses {
+		float:left;
+		width:49%;
+		clear:left;
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-sem-4-courses {
+		float:left;
+		width:49%;
+		clear:right;
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-semester-5-courses {
+		float:left;
+		width:49%;
+		clear:left;
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-semester-6-courses {
+		float:left;
+		width:49%;
+		clear:right;
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-semester-7-courses {
+		float:left;
+		width:49%;
+		clear:left;	
+	}
+	
+	.view-pos-view-of-courses table .views-field-field-semester-8-courses {
+		float:left;
+		width:49%;
+		clear:right;
+	}
+	
+		/* -- Department Directory -- */
+	.section-departments table .views-field-field-position {
+		display:none;	
+	}
+	
+		/* -- User Profile page --*/	
+	.section-profile .views-field-picture,
+	.section-profile #block-quicktabs-user-profile-cv-tabs {
+		display:none;	
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------*/
+/* --------------------------*/
+/* ---- 482px to 568px ----- */
+/* --------------------------*/
+/* --------------------------*/
+
+@media only screen
+and (min-width : 482px)
+and (max-width : 568px) {
+
+/* -- --------------- --*/
+/* -- General styling --*/
+/* -- --------------- --*/
+
+	.four-column{
+		width:49.9%;
+	}
+	.three-column{
+		width:49.9%;
+	}
+	.two-column{
+		width:49.9%;
+	}
+	
+
+/* -- ---------------- --*/
+/* -- Homepage Styling --*/
+/* -- ---------------- --*/
+
+	.front #block-views-slideshow-home-block {
+		display:none;		
+	}
+	
+		/* -- HIDES HOMEPAGE MOBILE MENU ON LARGER SCREENS --*/
+	.front #secondary-content-wrapper .menu {
+		display:none;
+	}
+
+		/* -- HIDES sidebar infographic --*/
+	.front #block-views-14cbf74eebf9365ecbd89c89743905d8 {
+		display:none;
+	}
+
+/* -- ------------------------------ --*/
+/* -------- Sitewide styling --------- */
+/* -- ------------------------------ --*/
+
+	/* -- Shows HOMEPAGE MOBILE MENU ON small SCREENS --*/
+	#secondary-content-wrapper {
+		display:block;
+	}
+	
+	/* -- Get rid of some extra padding above the footer --*/
+	section#main-content {
+		padding-bottom:0px;
+	}
+	
+	/* -- Center Apply Now button --*/
+	#block-block-30 {
+		width: 200px;
+		margin: 0px auto;
+		padding-bottom:10px;
+	}
+	
+	
+	/* -- Deals with header background --*/
+	#leaderboard-wrapper {
+		background:none;
+	}
+	
+	/* -- Header styling --*/
+	
+		/* -- Makes background go full width behind header --*/
+	.region-leaderboard {
+		/*float:none;*/
+	}
+		
+	#leaderboard-wrapper {
+		background-image: url("images/leader-board-bkg-lines.png");
+		border-bottom:none;
+	}
+	
+		/* -- Hide leaderboard border --*/
+	#leaderboard-wrapper {
+		border-bottom:none;
+	}
+	
+	#leaderboard-wrapper .region-leaderboardsearchmenu {
+		float:right;
+	}
+		/* -- Hide Purdue link and login link --*/
+	.region-leaderboardtopmenu,
+	.region-leaderboardbottommenu {
+		display:none;
+	}
+	
+	.region-leaderboardbottommenu li {
+		float:left;
+		clear:both;
+	}
+	
+		/* -- center apply now button --*/
+	#block-views-apply-now-button-block {
+		width: 200px;
+		margin: 0px auto;
+		padding-bottom:10px;
+	}
+	
+	#nav-wrapper {
+		display:none;	
+	}
+	
+	#header-wrapper #block-menu-block-6 h2 {
+		display:none;
+	}
+	
+	#header-wrapper #block-menu-block-6 a {
+		font-size:18px;
+	}
+	
+	
+	/* -- Mobile Menu styling --*/
+	
+	#block-quicktabs-mobile-accordion-menu .block-inner {
+		margin:0px;
+	}
+	
+	#block-quicktabs-mobile-accordion-menu {
+		padding-top:0px;
+	}
+	
+	#block-quicktabs-mobile-accordion-menu .block-inner .ui-corner-all {
+		border-radius:0px;
+		-webkit-border-radius:0px;
+		-moz-border-radius:0px;	
+	}
+	
+		/* -- accordion closed styling --*/
+	#block-quicktabs-mobile-accordion-menu .block-inner .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+		border:none;
+		border-bottom:2px solid #F4D073;
+		background:none;
+		background-color:#fff;
+		color:#fff;
+	}
+	
+	#quickset-mobile_accordion_menu .ui-accordion-content {
+		padding:.5em .1em;
+	}
+	
+	#quickset-mobile_accordion_menu .ui-accordion-content .quicktabs_main.quicktabs-style-basic,
+	#quickset-mobile_accordion_menu .ui-accordion-content .quicktabs_main.quicktabs-style-basic .block-inner {
+		padding:0px;
+		margin-left:0px;
+	}
+	
+		/* -- menu list items --*/
+	#quickset-mobile_accordion_menu .ui-accordion-content #quicktabs-container-menu_tabs_for_mobile_menu ul li,
+	#quickset-mobile_accordion_menu .ui-accordion-content #quicktabs-container-menu_tabs_for_mobile_menu-2 ul li {
+		list-style:none;
+		list-style-type:none;
+		list-style-image:none;
+		border-bottom:1px solid #CCC;
+		width:95%;
+		font-size:15px;
+		padding-bottom:5px;
+		padding-top:5px;
+		padding-left:10px;
+		margin:0 0 0 0;
+		line-height:normal;
+	}
+	
+		/* -- Hide 3rd column for landing pages --*/
+	#content_3columnMcWidget-column3 {
+		display:none;
+	}
+	
+/* -- ------------------ --*/
+/* ----- Mobile Menu ----- */
+/* -- ------------------ --*/
+	
+	#block-menu-menu-mobile-homepage-menu ul{
+		width:100%;
+		margin:0;
+	}
+	
+	#block-menu-menu-mobile-homepage-menu .block-inner {
+		margin-left:0px;
+		padding-left:0px;	
+	}
+	
+	#block-menu-menu-mobile-homepage-menu ul li{
+		list-style:none;
+		list-style-type:none;
+		list-style-image:none;
+		border-bottom:1px solid #CCC;
+		width:100%;
+		font-size:15px;
+		padding-bottom:5px;
+		padding-top:5px;
+		padding-left:10px;
+		margin:0 0 0 0;
+	}
+	
+	#block-menu-menu-mobile-homepage-menu ul li a:link{
+		text-decoration:none;
+	}
+	
+	#block-menu-menu-mobile-homepage-menu ul li a:hover{
+		text-decoration:none;
+	}
+	
+/* -- ---------------------------- --*/
+/* ----- Specific Page styling ----- */
+/* -- ---------------------------- --*/
+
+	/* ----- DEGREES PAGE ----- */
+
+		/* ----- hide available at on degrees page ----- */
+	.page-node-14 .views-field-field-degree-instances-with-same {
+		background:none !important;
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+	}
+	
+	/* ----- DEGREE PAGES ----- */
+	
+		/* ----- hide accreditation info ----- */
+	.section-degrees #block-views-degree-accreditation-block-1 {
+		display:none;
+	}
+	
+	.section-degrees #block-views-related-degrees-er-block {
+		width:49%;
+		float:left;
+	}
+
+	.section-degrees #block-views-related-degrees-er-block-1 {
+		width:49%;
+		float:left;
+	}
+
+	/* ----- DEPARTMENT PAGES ----- */
+
+		/* ----- hide promo slider, infographic ----- */
+	.page-type-department-option-landing-page #block-views-site-section-title-block-2,
+	#block-views-14cbf74eebf9365ecbd89c89743905d8 {
+		display:none;
+	}
+
+
+}
+
+/* --------------------------*/
+/* --------------------------*/
+/* ---- 569px to 960px ----- */
+/* --------------------------*/
+/* --------------------------*/
+@media only screen
+and (min-width : 569px)
+and (max-width : 960px) {
+#header-wrapper {
+	background-color:#eddfaf;
+	height:0px;
+}
+.four-column{
+    width:49.9%;
+}
+.three-column{
+	width:49.9%;
+}
+.two-column{
+	width:49.9%;
+}
+
+	/* -- HIDES HOMEPAGE MOBILE MENU ON LARGER SCREENS --*/
+#secondary-content-wrapper {
+	display:none;
+}
+
+}
+
+/* --------------------------*/
+/* --------------------------*/
+/* -------- 960px + -------- */
+/* --------------------------*/
+/* --------------------------*/
+@media only screen
+and (min-width : 961px) {
+#header-wrapper {max-height:313px;}
+.four-column{
+    width:24.99%;
+}
+.three-column{
+	width:33.333333%;
+	width:32%\9;  /* -- IE 8 fix -- */
+	*width:32%;  /* -- IE 7 fix -- */
+	_width:32%;  /* -- IE 6 fix -- */
+}
+
+
+.two-column{
+	width:49.99%;
+}
+	
+	/* -- HIDES HOMEPAGE MOBILE MENU ON LARGER SCREENS --*/
+#secondary-content-wrapper {
+	display:none;
+}
+
+
+}
+
+

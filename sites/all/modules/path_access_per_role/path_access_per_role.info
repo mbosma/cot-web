@@ -1,0 +1,11 @@
+name = Path Access per Role
+description = Hides action menu tabs based on the node path alias for each content type and role.
+package = Custom Modules
+core = 7.x
+
+; Information added by Matt on 2013-01-01
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "path_access_per_role"
+datestamp = "1354755537"
+

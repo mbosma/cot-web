@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Module file for path based node access.
+ * Implements hook_node_load() and sets a variable to be used on page.tpl.php.
+ * Allows edit access to nodes based on path permissions defined for each user
+*/
+
+function path_access_per_role_node_load($nodes, $types) {
+	/******************************************************************************************
+	Tests the user profile access fields to see if the user should 
+	have edit rights on the node for the current path
+		• path access comes from fields in user profile
+		• current content type builds field value to check
+	If tests are run and no matches are found, result is false and hides the menu.
+	******************************************************************************************/
+	
+	global $user; //get the global user so we have access to all of the fields
+	$user = user_load($user->uid); //load the current uid fields into the user variable
+	$path_test_result = 'deny'; //set the default access to false
+	foreach ($nodes as $node) {
+		/*****************************************************************************************
+		if the user is website hero or super editor, give them access to action menu all the time
+		*****************************************************************************************/
+		
+		if (isset($user->roles[3]) || isset($user->roles[4])) { //if user is 3 or 4
+				$path_test_result = 'allow'; //set access to true
+		} elseif (isset($node->type)){ //else if it's a node type
+			$my_node_type = $node->type; //set the node_type variable to the current node type
+			$path_access_field = 'field_access_' .substr($my_node_type,0,19); //make the path access field from the current node type
+			$fieldinfo = field_get_items('user', $user, $path_access_field); //get the field info from the user array
+			$my_trace = $fieldinfo[0]['value'];
+			if ($fieldinfo) { //if the field has data
+				if (strlen($fieldinfo[0]['value']) >= 1) {
+					$fieldvalue = check_plain($fieldinfo[0]['value']); //get the plain value of it (prob not necessary)
+					$my_path_test = drupal_match_path(request_path(),$fieldvalue); //check current path against path access value to see if path matches
+					if ($my_path_test == 1) {//if it matches
+						$path_test_result = 'allow'; //return variable as 'allow'
+					}
+				}
+			}
+		} 
+		$node->path_access_per_role_test = $path_test_result;
+	}
+}

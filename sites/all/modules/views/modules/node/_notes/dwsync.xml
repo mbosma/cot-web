@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="views_handler_argument_dates_various.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_argument_node_language.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_argument_node_nid.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_argument_node_type.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_argument_node_uid_revision.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_argument_node_vid.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_history_user_timestamp.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node_link.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node_link_delete.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node_link_edit.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node_path.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node_revision.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213280000000" />
+<file name="views_handler_field_node_revision_link.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_field_node_revision_link_delete.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_field_node_revision_link_revert.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_field_node_type.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_filter_history_user_timestamp.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_filter_node_access.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_filter_node_status.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_filter_node_type.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_handler_filter_node_uid_revision.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_plugin_argument_default_node.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_plugin_argument_validate_node.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_plugin_row_node_rss.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+<file name="views_plugin_row_node_view.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129903023780000000" remote="130264213290000000" />
+</dwsync>

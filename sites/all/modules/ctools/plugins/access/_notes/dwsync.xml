@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="compare_users.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211530000000" />
+<file name="context_exists.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="entity_bundle.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="entity_field_value.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="front.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="node.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="node_access.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="node_language.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="node_status.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="node_type.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="path_visibility.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="perm.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="php.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="role.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="site_language.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="string_equal.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="string_length.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="term.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="term_has_parent.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="term_parent.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="term_vocabulary.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+<file name="theme.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130150208660000000" remote="130264211540000000" />
+</dwsync>

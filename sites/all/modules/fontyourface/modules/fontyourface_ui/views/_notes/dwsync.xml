@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="fontyourface_ui.views_default.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_enabled_yes_no.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_enable_disable.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_font.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_foundry.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_license.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_preview.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_provider.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_field_fontyourface_tag_font_tid.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_filter_fontyourface_foundry.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_filter_fontyourface_provider.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_filter_tag_font_tid.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+<file name="views_handler_relationship_fontyourface_tag.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129930714400000000" remote="130264212040000000" />
+</dwsync>

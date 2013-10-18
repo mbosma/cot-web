@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="cas_attributes-option_for_attribute_override-1764016-12.patch" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129927273300000000" remote="130264210290000000" />
+<file name="cas_attributes.admin.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129927295140000000" remote="130264210290000000" />
+<file name="cas_attributes.admin.inc.orig" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_attributes.admin.inc.rej" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129927295140000000" remote="130264210290000000" />
+<file name="cas_attributes.info" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_attributes.install" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_attributes.module" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129927295520000000" remote="130264210290000000" />
+<file name="cas_attributes.module.orig" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_attributes.module.rej" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129927295520000000" remote="130264210290000000" />
+<file name="cas_attributes.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129927295840000000" remote="130264210290000000" />
+<file name="cas_attributes.test.orig" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_attributes.tokens.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_ldap.admin.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_ldap.info" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_ldap.module" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="cas_ldap.tokens.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+<file name="LICENSE.txt" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129800229620000000" remote="130264210290000000" />
+</dwsync>

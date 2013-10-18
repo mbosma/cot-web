@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CommandHandlerBase.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="CopyFiles.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="CreateFolder.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="DeleteFile.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="DeleteFolder.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="DownloadFile.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="FileUpload.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="GetFiles.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="GetFolders.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="Init.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210920000000" />
+<file name="LoadCookies.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+<file name="MoveFiles.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+<file name="QuickUpload.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+<file name="RenameFile.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+<file name="RenameFolder.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+<file name="Thumbnail.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+<file name="XmlCommandHandlerBase.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="129793244980000000" remote="130264210930000000" />
+</dwsync>

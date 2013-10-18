@@ -1,0 +1,1 @@
+Removes the "Request new password" link from the user menu on log-in screens. Uses hook_menu_alter.

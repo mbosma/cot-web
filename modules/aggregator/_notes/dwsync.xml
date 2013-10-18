@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="aggregator-feed-source.tpl.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator-item.tpl.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator-rtl.css" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator-summary-item.tpl.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator-summary-items.tpl.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator-wrapper.tpl.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.admin.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.api.php" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.css" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.fetcher.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.info" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204018380000000" remote="130264208270000000" />
+<file name="aggregator.install" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.module" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.pages.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.parser.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.processor.inc" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+<file name="aggregator.test" server="ldvwebcot01.www.purdue.edu//var/www/html/root/cot/" local="130204010660000000" remote="130264208270000000" />
+</dwsync>
